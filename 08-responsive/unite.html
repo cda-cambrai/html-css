@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 14px;
+        }
+
+        h1 {
+            /* 1 fois la font size du parent */
+            /* 1em représente 14px */
+            /* 5em représente 70px */
+            font-size: 5em;
+        }
+
+        span {
+            font-size: 0.75em; /* 3/4 du h1 52.5px */
+            font-size: 0.75rem; /* 3/4 du body 10.5px */
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        @media (max-width: 767px) {
+            body {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Mon titre
+        <span>Sous titre</span>
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque architecto, ipsa voluptas vero minus earum iusto laudantium modi repellendus, nostrum officiis sint tempora aspernatur. Officia doloremque porro quo harum autem.</p>
+</body>
+</html>

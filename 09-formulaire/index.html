@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="">
+        <!-- Input représente un champ text, number, email, password -->
+        <label for="firstname">Prénom:</label>
+        <input type="text" name="firstname" id="firstname">
+
+        <!-- Les autres types de champs -->
+        <!-- Le champ radio (Un seul choix) -->
+        <h2>Votre civilité</h2>
+        <input type="radio" name="civility" id="mister">
+        <label for="mister">Monsieur</label>
+        <input type="radio" name="civility" id="miss">
+        <label for="miss">Madame</label>
+
+        <!-- Le champ checkbox -->
+        <h2>Vos compétences</h2>
+        <input type="checkbox" name="skills" id="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" name="skills" id="php">
+        <label for="php">PHP</label>
+
+        <br /><br />
+
+        <!-- Le champ select (Liste déroulante) -->
+        <label for="job">Métier</label>
+        <select name="job" id="job">
+            <option value="">Développeur</option>
+            <option value="">Intégrateur</option>
+        </select>
+
+        <br /><br />
+        <!-- Une zone de texte -->
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+        <br /><br />
+        <button>Envoyer</button>
+        <!--
+            Alternative: <input type="submit" value="Envoyer">
+        -->
+    </form>
+</body>
+</html>

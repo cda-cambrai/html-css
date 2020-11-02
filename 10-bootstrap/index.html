@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-4 pb-4 text-uppercase">
+        <div class="container">
+            <a class="navbar-brand" href="#">Matthieu Mota</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mes projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mes compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- /.container -->
+    </nav>
+
+    <div class="bg-portfolio">
+        <div class="container text-center">
+            <img width="240" src="avatar.png" alt="Matthieu Mota">
+            <h1>Matthieu Mota</h1>
+            <div class="my-4 separator d-flex justify-content-center align-items-center">
+                <div class="line"></div>
+                <i class="fas fa-laptop-code fa-3x mx-4"></i>
+                <div class="line"></div>
+            </div>
+            <p>Développeur web</p>
+        </div> <!-- /.container -->
+    </div> <!-- /.bg-portfolio -->
+
+    <div class="bg-project">
+        <div class="container">
+            <h2 class="text-dark">Mes projets</h2>
+
+            <div class="mt-4 mb-5 separator d-flex justify-content-center align-items-center">
+                <div class="line bg-dark"></div>
+                <i class="fas fa-laptop-code fa-3x mx-4"></i>
+                <div class="line bg-dark"></div>
+            </div>
+
+            <!-- Bootstrap fonctionne sur une grille de 12 colonnes -->
+            <!-- On peut donc avoir une row avec 4 colonnes de 3 -->
+            <div class="row d-none">
+                <!-- On aura 6 lettres en bureau (lg),
+                     4 lettres en tablette (md),
+                     2 lettres en mobile
+                 -->
+                <div class="col-6 col-md-3 offset-lg-1 col-lg-7">A</div>
+                <div class="col-6 col-md-3 col-lg-2">B</div>
+                <div class="col-6 col-md-3 col-lg-2">C</div>
+                <div class="col-6 col-md-3 col-lg-2">D</div>
+                <!-- On passe à la ligne dès qu'on est à 12 -->
+                <div class="col-6 col-md-3 col-lg-2">E</div>
+                <div class="col-6 col-md-3 col-lg-2">F</div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="position-relative">
+                        <a href="#" data-toggle="modal" data-target="#project-1">
+                            <div class="filter rounded-xl">
+                                <i class="fas fa-plus fa-4x"></i>
+                            </div>
+                        </a>
+                        <img class="img-fluid rounded-xl" src="img/maquette01-small.jpg" alt="Cabin">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="img-fluid mb-4 rounded-xl" src="img/cake.png" alt="Cake">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="img-fluid mb-4 rounded-xl" src="img/circus.png" alt="Circus">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img class="img-fluid mb-4 rounded-xl" src="img/game.png" alt="Game">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img class="img-fluid mb-4 rounded-xl" src="img/safe.png" alt="Safe">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img class="img-fluid mb-4 rounded-xl" src="img/submarine.png" alt="Submarine">
+                </div>
+            </div> <!-- /.row -->
+
+            <div class="modal fade" id="project-1">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Intégration numéro 1</h5>
+                            <button class="close" data-dismiss="modal">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid rounded-xl" src="img/maquette01.jpg" alt="Cabin">
+                        </div>
+                        <div class="modal-footer">
+                            <!-- L'attribut data- en html est "libre", on peut faire data-toto, data-titi -->
+                            <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            <a href="../06-maquette/index.html" target="_blank" class="btn btn-primary">
+                                Voir la maquette
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-about">
+        <div class="container">
+            <h2>A propos</h2>
+
+            <div class="mt-4 mb-5 separator d-flex justify-content-center align-items-center">
+                <div class="line"></div>
+                <i class="fas fa-laptop-code fa-3x mx-4"></i>
+                <div class="line"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 offset-lg-2">
+                    <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn btn-lg btn-outline-light">
+                    <i class="fas fa-download"></i>
+                    Voir mon CV
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-contact">
+        <div class="container">
+            <h2>Me contacter</h2>
+
+            <div class="mt-4 mb-5 separator d-flex justify-content-center align-items-center">
+                <div class="line bg-dark"></div>
+                <i class="fas fa-laptop-code fa-3x mx-4"></i>
+                <div class="line bg-dark"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form action="" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="d-none">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Nom" class="form-control">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="email" class="d-none">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Adresse email" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="d-none">Téléphone</label>
+                            <input type="text" name="phone" id="phone" placeholder="Téléphone" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="d-none">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" class="form-control"></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-lg p-3">Envoyer</button>
+                        </div>
+                    </form>
+                </div> <!-- /.col-lg-8 -->
+            </div>
+        </div>
+    </div> <!-- /.bg-contact -->
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3>Adresse</h3>
+                    <p class="lead">
+                        2215 John Daniel Drive <br />
+                        Clark, MO 65243
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>Réseaux sociaux</h3>
+                    <a class="btn btn-lg btn-outline-light" href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-lg btn-outline-light" href="#" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-lg btn-outline-light" href="#" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-lg btn-outline-light" href="#" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>A propos</h3>
+                    <p class="lead">
+                        Je suis un développeur web.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-copyright text-center py-4">
+        <div class="container">
+            <p class="m-0">
+                <small>Copyright &copy; <i class="far fa-copyright"></i> Matthieu Mota 2020</small>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

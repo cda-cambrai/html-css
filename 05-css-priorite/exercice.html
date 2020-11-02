@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Sélecteurs CSS avancés</title>
+        <meta charset="utf-8">
+        <style>
+            /*
+                A. Mettre le Paragraphe 3 en jaune.
+                B: Mettre les paragraphes 2 et 4 en rouge.
+                C: Mettre B et 2 en gras.
+                D: Mettre le premier li d'un ul après un span en bleu.
+            */
+            /* Méthode A1 */
+            #content > p {
+                color: yellow;
+            }
+            /* Méthode A2 */
+            section ~ p {
+                color: yellow;
+            }
+            /* B */
+            .container p + p {
+                color: red;
+            }
+            /* C */
+            ul li + li { /* ul li:last-child */
+                font-weight: bold;
+            }
+            /* D */
+            span ~ ul > li:first-child {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <section class="container">
+                <p>Paragraphe 1</p>
+                <p>Paragraphe 2</p>
+                <p>Paragraphe 4</p>
+                <span class="yellow-hover">Span 1</span>
+                <p>Paragraphe 5</p>
+            </section>
+            <p>Paragraphe 3</p>
+        </div>
+
+        <input type="text" name="name" />
+
+        <ul>
+            <li>A</li>
+            <li>B</li>
+        </ul>
+
+        <!-- span ~ ul > li:first-child -->
+        <span>Liste</span>
+        <p>Paragraphe</p>
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+        </ul>
+
+    </body>
+</html>

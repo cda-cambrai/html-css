@@ -1,0 +1,49 @@
+.page {
+    width: 1200px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.square {
+    background-color: red;
+    width: 30%;
+    height: 100px;
+}
+
+h1 {
+    color: blue;
+}
+
+/* Pour les écrans de 1199px et -*/
+@media (max-width: 1199px) {
+    .page {
+        width: 100%;
+    }
+
+    h1 {
+        color: red;
+    }
+
+    /* 2 square */
+    .square {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    h2 {
+        display: none;
+        /*visibility: hidden;*/
+    }
+
+    /* 1 square */
+    .square {
+        width: 80%;
+    }
+}

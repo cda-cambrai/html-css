@@ -1,0 +1,97 @@
+* {
+    color: red;
+}
+
+/* Sélection par balise */
+section {
+    background-color: red !important;
+}
+
+/* Sélection par id */
+#container.container {
+    background-color: yellow;
+}
+
+/* Sélection par classe */
+section.container {
+    background-color: blue;
+}
+
+/* Sélection par attribut */
+p[title="Salut"] {
+    background-color: green;
+}
+
+/* Sélecteurs CSS avancés */
+
+/* Sélectionne le p avec l'id paragraphe */
+p#paragraphe {}
+
+/* Sélectionne l'élément avec l'id paragraphe 
+dans un p */
+p #paragraphe {}
+
+/* Même chose avec une classe */
+p.paragraphe {}
+p .paragraphe {}
+
+/* Sélectionne un élément DIRECTEMENT enfant
+d'un autre élément */
+section > #paragraphe {}
+
+/* Sélectionne les p DIRECTEMENT précédés d'un p */
+#content p + p {}
+
+/* Sélectionne les p précédés d'un p
+avec le tild */
+#content p ~ p {}
+
+/* Les pseudos classes */
+
+/* Au survol */
+p:hover {
+    background-color: blue;
+}
+
+/* Au clic */
+p:active {
+    font-size: 32px;
+}
+
+/* Au focus */
+input:focus {
+    background-color: lightblue;
+}
+
+.button, .button:visited {
+    background-color: rgb(24, 183, 223);
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.button:active {
+    color: #000 !important;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: rgb(24, 183, 223);
+    border-color: rgb(24, 183, 223);
+}
+
+/* On sélectionne les p qui sont les premiers enfants
+de n'importe quel élément */
+p:first-child {
+    border: 1px solid green;
+}
+
+/* On sélectionne un enfant p qui est le 2ème enfant */
+p:nth-child(2) {
+    background-color: purple;
+}
+
+p:last-child {}

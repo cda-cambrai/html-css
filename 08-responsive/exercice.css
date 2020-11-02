@@ -1,0 +1,83 @@
+.page {
+    width: 1200px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.red {
+    background-color: #fe5d53;
+    height: 50px;
+    width: 32.33%;
+}
+
+.green {
+    background-color: #127f88;
+    height: 50px;
+    width: 65.66%;
+}
+
+.square {
+    width: 24%;
+}
+
+.grey {
+    background-color: #e3e3e3;
+    height: 100px;
+    margin: 40px 0 20px 0;
+}
+
+.yellow {
+    background-color: #fedd11;
+    height: 50px;
+}
+
+body {
+    margin: 0;
+}
+
+@media (max-width: 1199px) {
+    .page {
+        width: 992px;
+    }
+
+    .red {
+        width: 15.66%;
+    }
+
+    .green {
+        width: 82.33%;
+    }
+
+    /* .flex:last-child > div */
+
+    .square {
+        width: 32.33%;
+    }
+}
+
+@media (max-width: 991px) {
+    .page {
+        width: 92%;
+    }
+
+    .square {
+        width: 49%;
+    }
+}
+
+@media (max-width: 767px) {
+    .red {
+        /*display: none;*/
+        order: 1;
+        width: 100%;
+    }
+
+    .green, .square {
+        width: 100%;
+    }
+}

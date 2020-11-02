@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex" style="height: 100vh">
+        <div class="page">
+            <form action="">
+                <div class="flex">
+                    <div class="field">
+                        <label for="name">Nom :</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="field">
+                        <label for="firstname">Prénom :</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="field">
+                        <label for="phone">Téléphone :</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="field">
+                        <label for="status">Situation :</label>
+                        <select name="status" id="status">
+                            <option value="">Marié(e)</option>
+                            <option value="">Pacsé(e)</option>
+                            <option value="">Célibataire</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="field">
+                        <label>Hobbies</label>
+
+                        <div>
+                            <input type="checkbox" name="hobbies" id="maquettes">
+                            <label for="maquettes">Maquettes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="hobbies" id="cyclisme">
+                            <label for="cyclisme">Cyclisme</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="hobbies" id="cuisine">
+                            <label for="cuisine">Cuisine</label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>Civilité</label>
+
+                        <div>
+                            <input type="radio" name="civility" id="mr">
+                            <label for="mr">Mr</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="civility" id="mme">
+                            <label for="mme">Mme</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <button>Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

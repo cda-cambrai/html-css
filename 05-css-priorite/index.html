@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        Les priorités en CSS (du + important au - important) :
+        - !important 10000
+        - Attribut style html 2000
+        - Selecteur id (#) 1000
+        - Selecteur classe (.), attribut ([]), pseudo classes 100
+        - Selecteur par balise 10
+        - Selecteur universel (*) 1
+    -->
+    <section id="container" class="container" style="background-color: pink">
+        <p>Un paragraphe</p>
+        <p title="Salut">Paragraphe 2</p>
+    </section>
+
+    <p id="paragraphe"></p>
+
+    <p>
+        <span id="paragraphe"></span>
+    </p>
+
+    <!-- N'est pas sélectionné par "section > #paragraphe" -->
+    <section>
+        <div>
+            <p id="paragraphe"></p>
+        </div>
+    </section>
+
+    <!-- On sélectionne uniquement B, C et E pour + -->
+    <!-- On sélectionne uniquement B, C, D et E pour ~ -->
+    <div id="content">
+        <p>A</p>
+        <p>B</p>
+        <p>C</p>
+        <span>Toto</span>
+        <p>D</p>
+        <p>E</p>
+    </div>
+
+    <!-- J'affiche un champ de formulaire -->
+    <input type="text">
+
+
+    <a class="button" href="#">Cliquez ici</a>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.page {
+    width: 900px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.field {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.field > label {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 5px 10px;
+}
+
+input:focus, select:focus {
+    border-color: red;
+    outline: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+    padding: 8px 20px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+body {
+    background-image: url(autumn.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: #bb7e29;*/
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+    .page {
+        width: 100%;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .field {
+        width: 100%;
+    }
+}

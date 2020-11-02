@@ -1,0 +1,173 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.75em;
+}
+
+#navbarNav .nav-link {
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+#navbarNav .nav-link:hover {
+    color: #7a9eff;
+}
+
+.navbar {
+    font-weight: 700;
+}
+
+.bg-portfolio {
+    background-color: #7a9eff;
+    color: #fff;
+    padding: 6rem 0;
+}
+
+.bg-portfolio img {
+    margin-bottom: 50px;
+}
+
+.bg-portfolio h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bg-portfolio p {
+    font-size: 1.5rem;
+}
+
+.separator .line {
+    width: 150px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.separator .line:first-child {
+    /*margin-right: 20px;*/
+}
+
+.separator .line:last-child {
+    /*margin-left: 20px;*/
+}
+
+.rounded-xl {
+    border-radius: 15px;
+}
+
+.bg-project {
+    padding: 6rem 0;
+}
+
+.bg-project h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.bg-project .filter {
+    background-color: rgba(26, 188, 156, 0.75);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+}
+
+.bg-project .filter:hover {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .bg-project .position-relative img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+.bg-about {
+    background-color: #7a9eff;
+    color: #fff;
+    padding: 6rem 0;
+}
+
+.bg-about h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.bg-contact {
+    padding: 6rem 0;
+}
+
+.bg-contact h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact-form .form-control {
+    border: 0;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 1.5rem;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+}
+
+footer {
+    padding: 6rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+footer a.btn-outline-light {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 36px;
+    padding: 6px;
+    margin: 0 5px;
+    border-width: 2px;
+    /*
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+footer i {
+    width: 25px;
+    height: 20px;
+    /* L'élément sera pivoté en 0.5s */
+    transition: 0.5s;
+}
+
+footer a:hover i {
+    transform: rotate(360deg);
+}
+
+.bg-copyright {
+    background-color: #141719;
+    color: #fff;
+}

@@ -1,0 +1,105 @@
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.green {
+    background-color: #00ff00;
+
+    /* Le z-index permet de forcer la position sur z
+    position: relative;
+    top: -100px;
+    z-index: 1;
+    */
+}
+
+.blue {
+    background-color: #0000ff;
+
+    /* La position relative permet de déplacer
+    l'élément HTML librement sur la page.
+    position: relative;
+    top: -200px;
+    opacity: 0.5;
+    */
+}
+
+.exo1.red {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+
+.exo1.green {
+    position: relative;
+    top: -100px;
+    z-index: 1;
+}
+
+.exo1.blue {
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+
+.exo2.red, .exo2.green, .exo2.blue {
+    position: relative;
+}
+
+.exo2.red {
+    opacity: 0.85;
+}
+
+.exo2.green {
+    top: -100px;
+    opacity: 0.15;
+}
+
+.exo2.blue {
+    top: -200px;
+    opacity: 0;
+}
+
+.relative {
+    background-image: url(../galaxy.gif);
+    height: 400px;
+    /* background-repeat: no-repeat; */
+    position: relative;
+}
+
+.absolute {
+    font-size: 60px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.starship {
+    background-image: url(../starships.png);
+    background-size: 300px;
+    width: 100px;
+    height: 90px;
+    position: absolute;
+}
+
+.starship-1 {
+    top: 35px;
+    left: 354px;
+}
+
+.starship-2 {
+    background-position: -100px 0;
+    top: 296px;
+    left: 241px;
+}
+
+.starship-3 {
+    background-position: -200px 0;
+    top: 150px;
+    left: 640px;
+}

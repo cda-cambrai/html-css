@@ -1,0 +1,238 @@
+/* Utiliser une police "custom" */
+@font-face {
+    font-family: 'BallPark';
+    src: url(../fonts/ballpark.eot) format('embedded-opentype'),
+         url(../fonts/ballpark.woff) format('woff'),
+         url(../fonts/ballpark.ttf) format('truetype'),
+         url(../fonts/ballpark.svg) format('svg');
+}
+
+.page {
+    width: 1000px;
+    margin: auto;
+}
+
+body {
+    background-image: url(../img/bg.png);
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.logo, .menu {
+    float: left;
+    width: 500px;
+}
+
+.logo {
+    font-family: 'BallPark', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+.menu {
+    text-align: right;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 12px;
+    display: inline-block;
+}
+
+.menu ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.line {
+    background-color: #000;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+.hero {
+    background-image: url(../img/new-york.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    /* Haut/gauche, haut/droite, bas/droite, bas/gauche */
+    border-radius: 5px 5px 0 5px;
+    box-shadow: 0 4px 4px 0 #696969;
+    position: relative;
+}
+
+.hero .filter {
+    background-color: #000;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 5px 5px 0 5px;
+}
+
+.hero p {
+    margin: 0 0 10px 0;
+}
+
+.hero .hero-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%; /* Je positionne le text à 125px donc la moitié du hero */
+    transform: translateY(-50%); /* Remonte le texte de la moitié de sa taille */
+    color: #fff;
+}
+
+.hero .hero-text a {
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* ---- Partie principale du site ---- */
+main article, main aside {
+    float: left;
+}
+
+main article {
+    width: 680px;
+    margin-right: 20px;
+}
+
+main article h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+main aside {
+    width: 260px;
+    background-color: #706b64;
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 1px 4px 0 #000;
+}
+
+main aside h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+main aside .arrow {
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+.arrow2 {
+    border-top: 8px solid transparent;
+    border-right: 15px solid #706b64;
+    border-bottom: 8px solid transparent;
+    /*box-shadow: 0 1px 4px 0 #000;*/
+    filter: drop-shadow(-1px 2px 1px rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: 150px;
+    left: -15px;
+}
+
+main aside .avatar {
+    width: 80px;
+    border: 1px solid #000;
+    display: block;
+    margin: auto;
+}
+
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-size: 280px 81px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 18px;
+    transition: 0.5s;
+}
+
+.sprite span {
+    display: none;
+    /*visibility: hidden;*/
+}
+
+.sprite-twitter {
+    background-position: -40px 0;
+}
+
+.sprite-youtube {
+    background-position: -80px 0;
+}
+
+.sprite-instagram {
+    background-position: -120px 0;
+}
+
+.sprite:hover {
+    background-position-y: 40px;
+}
+
+.tweet, .photos, .friends {
+    float: left;
+    width: 333.33px;
+}
+
+footer .friends ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    list-style-image: url(../img/list-style.png);
+}
+
+.friends ul li a {
+    color: #760001;
+    text-decoration: none;
+}
+
+footer {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+footer:before {
+    content: ' ';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+}
+
+footer h3 {
+    text-transform: uppercase;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.clear {
+    clear: both;
+}

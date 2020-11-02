@@ -1,0 +1,45 @@
+.page {
+    width: 1000px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    background-color: yellow;
+    height: 50px;
+    align-items: center;
+}
+
+header div:first-child {
+    width: 680px;
+    padding-left: 20px;
+}
+
+header div:last-child {
+    width: 290px;
+    padding-left: 10px;
+}
+
+.blue {
+    background-color: blue;
+    width: 700px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 12px 0;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    margin: 12px 0;
+}
+
+.red {
+    background-color: red;
+    width: 280px;
+    padding: 10px;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ma première page HTML</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="top"></div>
+        <!-- Raccourcis claviers
+             - Tab ou shift + tab pour indenter
+             - Alt + flèches pour déplacer le code
+             en vertical
+            -->
+        <header>
+            <!-- Un commentaire en HTML -->
+            <h1>Hello world!</h1>
+            <h2>Un sous titre</h2>
+            <!-- Les titres vont jusque h6 -->
+        </header>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, hic itaque! Possimus amet id ab et vel consequuntur, doloribus nostrum minus consectetur! Et esse minima expedita, similique modi debitis illo.
+        </p>
+        <!-- Séparateur avec une bordure -->
+        <hr />
+
+        <!-- Pour afficher une image -->
+        <img src="chaton.jpg" alt="Chaton qui touche une fleur" />
+
+        <!-- On peut afficher des listes -->
+        <ul class="liste-1">
+            <!-- Une liste ne peut contenir que des li -->
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ol>
+            <!-- Une liste ne peut contenir que des li -->
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <!--
+            Ecire le code HTML permettant d'avoir le rendu suivant :
+            1. Chien
+                ° Jack Russel
+                ° Doberman
+                ° Husky
+            2. Chat
+                ° Gouttière
+                ° Européen
+                ° Persan
+            3. Oiseau
+                ° Pigeon
+                ° Perroquet
+                ° Roucoups
+            BONUS: La liste des oiseaux devra être précédé par une image d'oiseau
+        -->
+        <ol>
+            <li>Chien
+                <ul>
+                    <li>Jack Russel</li>
+                    <li>Doberman</li>
+                    <li>Husky</li>
+                </ul>
+            </li>
+            <li>Chat
+                <ul>
+                    <li>Gouttière</li>
+                    <li>Européen</li>
+                    <li>Persan</li>
+                </ul>
+            </li>
+            <li>Oiseau
+                <!-- <ul style="list-style-image: url(oiseau.png)"> -->
+                <ul style="list-style-type: none">
+                    <li><img src="oiseau.png" width="50" />Pigeon</li>
+                    <li><img src="oiseau.png" width="50" />Perroquet</li>
+                    <li><img src="oiseau.png" width="50" />Roucoups</li>
+                </ul>
+            </li>
+        </ol>
+
+        <!-- On peut afficher un code pré formaté avec la balise pre -->
+        <pre>
+            &lt;img src="chaton.jpg" /&gt;
+            &lt;p&gt;Texte&lt;/p&gt;
+                       .-.
+                      |_:_|
+                     /(_Y_)\
+.                   ( \/M\/ )
+ '.               _.'-/'-'\-'._
+   ':           _/.--'[[[[]'--.\_
+     ':        /_'  : |::"| :  '.\
+       ':     //   ./ |oUU| \.'  :\
+         ':  _:'..' \_|___|_/ :   :|
+           ':.  .'  |_[___]_|  :.':\
+            [::\ |  :  | |  :   ; : \
+             '-'   \/'.| |.' \  .;.' |
+             |\_    \  '-'   :       |
+             |  \    \ .:    :   |   |
+             |   \    | '.   :    \  |
+             /       \   :. .;       |
+            /     |   |  :__/     :  \\
+           |  |   |    \:   | \   |   ||
+          /    \  : :  |:   /  |__|   /|
+      snd |     : : :_/_|  /'._\  '--|_\
+          /___.-/_|-'   \  \
+                         '-'
+        </pre>
+
+        <!-- Si on veut mettre en forme du texte -->
+        <p>
+            <strong>En gras</strong>,
+            <em>en italique</em>,
+            <s>un texte barré</s>
+            <mark>Test</mark>
+        </p>
+
+        <p>
+            Retour à la ligne <br />
+            Lorem ipsum
+        </p>
+
+        <!-- Faire des liens en HTML -->
+        <!-- Lien relatif -->
+        <a href="contact.html">Contact</a>
+        <!-- Lien absolu -->
+        <a href="https://www.google.fr" title="Aller sur Google" target="_blank">
+            Google
+        </a>
+
+        <!-- On peut faire un lien vers une ancre -->
+        <a href="#top">Retour en haut de la page</a>
+
+        <!-- On peut faire des tableaux pour lister des données -->
+        <table border="1px" cellpadding="20px" cellspacing="0">
+            <thead> <!-- En-tête -->
+                <tr> <!-- Une ligne du tableau -->
+                    <th>Nom</th> <!-- Une colonne du tableau -->
+                    <th>Année de sortie</th>
+                    <th>Acteurs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <!-- Nouvelle ligne -->
+                    <td>Spider-Man: New Generation</td> <!-- Nouvelle colonne -->
+                    <td align="center">2018</td>
+                    <td>Shameik Moore, Hailee Steinfeild</td>
+                </tr>
+                <tr>
+                    <td>The Amazing Spider-man</td>
+                    <td align="center" colspan="2">2012</td> <!-- Ce td prendra 2 colonnes -->
+                </tr>
+            </tbody>
+            <caption align="top">Mes films</caption>
+        </table>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </body>
+</html>

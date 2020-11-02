@@ -1,0 +1,54 @@
+/*
+    On a des sélecteurs en CSS
+    - Par balise (p)
+    - Par class (.classe)
+    - Par id (#id) (Un id est unique)
+*/
+.bg-red {
+    background-color: #ff0000;
+    text-align: left;
+}
+
+#p1 {
+    color: #008000;
+}
+
+.gray {
+    color: #808080;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+#blue-bold {
+    color: #0000ff;
+    font-weight: 700;
+}
+
+/*
+    On peut récupérer un élément
+    précis par sa position en tant
+    qu'enfant 
+*/
+.gray span:nth-child(3) {
+    color: red;
+}
+
+span:last-child {
+    text-transform: uppercase;
+}
+
+h2.green.other {
+    background-color: #008000;
+}
+
+/*
+h2.green.other => <h2 class="green other"></h2>
+h2 .green .other =>
+    <h2>
+        <span class="green">
+            <span class="other"></span>
+        </span>
+    </h2>
+*/

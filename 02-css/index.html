@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Le CSS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            p {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            Il existe 3 façons d'intégrer du CSS dans le HTML
+            (de la moins bonne à la meilleure méthode)
+            - Attribut style des balises
+            - Balise style dans le head
+            - Un fichier externe en .css
+        -->
+        <h1 style="color: #2c1985">Mon titre est en bleu</h1>
+        <p id="p1">Ce paragraphe est centré et vert</p>
+        <p class="bg-red">Le paragraphe a une couleur de fond</p>
+
+        <!--
+            La couleur du paragraphe devra être en gris.
+            Le premier span devra être en majuscule.
+            Le second span sera en gras et en bleu.
+            Le dernier span devra être en rouge. (Bonus)
+        -->
+        <p class="gray">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam <span class="uppercase">ratione odit</span> cumque itaque quae quaerat voluptates labore <span id="blue-bold">fugiat possimus</span>, reprehenderit assumenda voluptate facilis omnis quasi iure <span>sed veritatis</span>. Hic?
+        </p>
+
+        <h2 class="green other">Un autre titre</h2>
+
+        <p><span>Test</span></p>
+
+        <span>Test</span>
+    </body>
+</html>
